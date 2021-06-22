@@ -4,7 +4,7 @@
 
 ## Overview
 
-**Comical** is a a database of shared comic strips. Signed in users will be able to add their favorite comic strips and leave reviews as well as add, edit and delete it.
+**Comical** is a a database of shared comic strips. Signed in users will be able to add their favorite comic strips and leave comments as well as add, edit and delete comments.
 
 
 <br>
