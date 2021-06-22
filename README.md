@@ -1,8 +1,8 @@
-# comical
+# Comical
 
 ## Overview
 
-_**Project Title** is lorem ipsum dolor sit amet. Phasellus dapibus fermentum risus vitae bibendum. Integer vel ipsum mollis odio sollicitudin ornare eu vel ex. In quis fringilla velit, ac maximus quam. Etiam eget placerat neque. Aenean faucibus sem non nisi lobortis ullamcorper._
+_**Comical** is a a database of shared comic strips. Signed in users will be able to add their favorite comic strips and leave reviews as well as add, edit and delete it.
 
 
 <br>
