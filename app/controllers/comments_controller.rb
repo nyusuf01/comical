@@ -1,24 +1,25 @@
 class CommentsController < ApplicationController
-  before_action :set_comment, only: [:show, :update, :destroy]
+  before_action :set_comment, only: [:update, :destroy]
 
   # GET /comments
   def index
-    @comments = Comment.all
-
-    render json: @comments
+    @commic = Comic.find(params[:comic_id])
+    @comments = Comment.where(comic_id: @comic.id)
+    # https://support.workato.com/en/support/discussions/topics/1000091251
+    render json: @comments.sort_by{|x| x[:created_at]}.reverse, include: :user
   end
 
-  # GET /comments/1
+  #GET /comments/1
   def show
-    render json: @comment
+    @comment = Comment.find(params[:id])
+    render json: @comment 
   end
 
   # POST /comments
   def create
     @comment = Comment.new(comment_params)
-
     if @comment.save
-      render json: @comment, status: :created, location: @comment
+      render json: @comment, status: :created
     else
       render json: @comment.errors, status: :unprocessable_entity
     end
@@ -35,7 +36,7 @@ class CommentsController < ApplicationController
 
   # DELETE /comments/1
   def destroy
-    @comment.destroy
+      @comment.destroy
   end
 
   private
@@ -46,6 +47,6 @@ class CommentsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def comment_params
-      params.require(:comment).permit(:content, :comic_id, :user_id)
+      params.require(:comment).permit(:content, :user_id, :comic_id)
     end
 end

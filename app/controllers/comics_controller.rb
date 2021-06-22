@@ -1,22 +1,23 @@
 class ComicsController < ApplicationController
-  before_action :set_comic, only: [:show, :update, :destroy]
+  before_action :authorize_request, except: [:index]
+  before_action :set_book, only: [:update, :destroy]
 
   # GET /comics
   def index
     @comics = Comic.all
-
-    render json: @comics
+    render json: @comics.limit(20).sort_by{|x| x[:created_at]}.reverse
   end
 
   # GET /comics/1
   def show
-    render json: @comic
+    @comic = Comic.find(params[:id])
+    render json: @comic, include: :comments
   end
 
   # POST /comics
   def create
     @comic = Comic.new(comic_params)
-
+    @comic.user = @current_user
     if @comic.save
       render json: @comic, status: :created, location: @comic
     else
@@ -35,17 +36,17 @@ class ComicsController < ApplicationController
 
   # DELETE /comics/1
   def destroy
-    @comic.destroy
+    @book.destroy
   end
 
   private
     # Use callbacks to share common setup or constraints between actions.
-    def set_comic
-      @comic = Comic.find(params[:id])
+    def set_book
+      @book = @current_user.comics.find(params[:id])
     end
 
     # Only allow a list of trusted parameters through.
-    def comic_params
-      params.require(:comic).permit(:title, :author, :summary, :image_url, :user_id)
+    def book_params
+      params.require(:book).permit(:title, :author, :summary, :image_url)
     end
 end
