@@ -1,4 +1,4 @@
-![Screen Shot 2021-06-22 at 7 54 59 AM](https://user-images.githubusercontent.com/80069382/122920470-708acb80-d32f-11eb-96dc-8f8f59866a9d.png)
+
 # Comical
 
 ## Overview
