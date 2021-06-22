@@ -1,6 +1,6 @@
 class ComicsController < ApplicationController
   before_action :authorize_request, except: [:index]
-  before_action :set_comic, only: [:update, :destroy]
+  before_action :set_Comic, only: [:update, :destroy]
 
   # GET /comics
   def index
@@ -36,7 +36,7 @@ class ComicsController < ApplicationController
 
   # DELETE /comics/1
   def destroy
-    @comic.destroy
+    @Comic.destroy
   end
 
   private
@@ -46,7 +46,7 @@ class ComicsController < ApplicationController
     end
 
     # Only allow a list of trusted parameters through.
-    def comic_params
-      params.require(:comic).permit(:title, :author, :summary, :image_url)
+    def Comic_params
+      params.require(:Comic).permit(:title, :author, :summary, :image_url)
     end
 end
