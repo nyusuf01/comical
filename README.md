@@ -2,7 +2,7 @@
 
 ## Overview
 
-_**Comical** is a a database of shared comic strips. Signed in users will be able to add their favorite comic strips and leave reviews as well as add, edit and delete it.
+**Comical** is a a database of shared comic strips. Signed in users will be able to add their favorite comic strips and leave reviews as well as add, edit and delete it.
 
 
 <br>
@@ -39,41 +39,16 @@ _**Comical** is a a database of shared comic strips. Signed in users will be abl
 
 #### Wireframes
 
-> Use the Wireframes section to display desktop, tablet and mobile views. No hand-drawn wireframes. Use a tool like wireframe.cc, Whimsical or AdobeXD
 
-![Dummy Link](url)
-
-- Desktop Landing
-
-![Dummy Link](url)
-
-- Desktop Hero
-
-![Dummy Link](url)
-
-- Resource Index
-
-![Dummy Link](url)
-
-- Resource Show
-
-![Dummy Link](url)
-
-- Tablet Resource Index
-
-![Dummy Link](url)
-
-- Mobile Resource Index
 
 #### Component Tree
 
-> Use this section to display the structure of how your React components are being rendered. This should show the parent to child relation between you components. In other words, show which components are rendering the other components. Include a link to your component tree
+<img width="590" alt="Screen Shot 2021-06-22 at 7 07 38 AM" src="https://user-images.githubusercontent.com/80069382/122914481-af695300-d328-11eb-8edd-8c08229537da.png">
 
-[Component Tree Sample](https://gist.git.generalassemb.ly/davidtwhitlatch/414107e2560ae0bb65e233570f2fe056#file-component-tree-png)
 
 #### Component Architecture
 
-> Use this section to define your React components and the data architecture of your app. This should be a reflection of how you expect your directory/file tree to look like. 
+
 
 ``` structure
 
@@ -117,7 +92,7 @@ src
 
 #### Time Estimates
 
-> Use this section to estimate the time necessary to build out each of the components you've described above.
+
 
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
