@@ -1,4 +1,5 @@
 
+
 # Comical
 
 ## Overview
@@ -45,6 +46,8 @@
 ![Screen Shot 2021-06-22 at 7 55 12 AM](https://user-images.githubusercontent.com/80069382/122920589-8ef0c700-d32f-11eb-9482-6c7808e96a2d.png)
 
 ![Screen Shot 2021-06-22 at 7 55 22 AM](https://user-images.githubusercontent.com/80069382/122920639-9c0db600-d32f-11eb-9150-f5fb0dcf6183.png)
+
+![Screen Shot 2021-06-22 at 8 50 58 AM](https://user-images.githubusercontent.com/80069382/122927639-1261e680-d337-11eb-9d97-7e684dfded56.png)
 
 
 #### Component Tree
