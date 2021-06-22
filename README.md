@@ -47,11 +47,16 @@ https://www.figma.com/file/GI6OeA7hm8myqyMIhJk8Ab/Untitled?node-id=0%3A1
 
 ![Screen Shot 2021-06-22 at 7 55 12 AM](https://user-images.githubusercontent.com/80069382/122920589-8ef0c700-d32f-11eb-9482-6c7808e96a2d.png)
 
-![Screen Shot 2021-06-22 at 7 55 22 AM](https://user-images.githubusercontent.com/80069382/122920639-9c0db600-d32f-11eb-9150-f5fb0dcf6183.png)
+<img width="423" alt="Screen Shot 2021-06-22 at 1 09 45 PM" src="https://user-images.githubusercontent.com/80069382/122970024-58c93c80-d35b-11eb-925a-0901e76f48d5.png">
+
 
 ![Screen Shot 2021-06-22 at 9 35 33 AM](https://user-images.githubusercontent.com/80069382/122934251-5f48bb80-d33d-11eb-9be9-227001125142.png)
 
 ![Screen Shot 2021-06-22 at 9 35 47 AM](https://user-images.githubusercontent.com/80069382/122934306-6a035080-d33d-11eb-920a-13444f335681.png)
+
+![Screen Shot 2021-06-22 at 1 12 37 PM](https://user-images.githubusercontent.com/80069382/122970194-97f78d80-d35b-11eb-8c5b-11a14ce27349.png)
+
+![Screen Shot 2021-06-22 at 1 12 46 PM](https://user-images.githubusercontent.com/80069382/122970242-a8a80380-d35b-11eb-8a2f-92faff8dd793.png)
 
 ![Screen Shot 2021-06-22 at 9 10 43 AM](https://user-images.githubusercontent.com/80069382/122934351-74bde580-d33d-11eb-8e5a-e55a6324f8fc.png)
 
