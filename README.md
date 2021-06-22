@@ -59,7 +59,8 @@
 
 #### Component Tree
 
-![Screen Shot 2021-06-22 at 9 48 49 AM](https://user-images.githubusercontent.com/80069382/122936393-1f82d380-d33f-11eb-807c-fc3b61b67a65.png)
+<img width="702" alt="Screen Shot 2021-06-22 at 11 15 26 AM" src="https://user-images.githubusercontent.com/80069382/122951382-3b8c7200-d34b-11eb-8166-2f36ac14be46.png">
+
 
 
 
