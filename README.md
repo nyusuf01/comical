@@ -47,7 +47,14 @@
 
 ![Screen Shot 2021-06-22 at 7 55 22 AM](https://user-images.githubusercontent.com/80069382/122920639-9c0db600-d32f-11eb-9150-f5fb0dcf6183.png)
 
-![Screen Shot 2021-06-22 at 8 50 58 AM](https://user-images.githubusercontent.com/80069382/122927639-1261e680-d337-11eb-9d97-7e684dfded56.png)
+![Screen Shot 2021-06-22 at 9 35 33 AM](https://user-images.githubusercontent.com/80069382/122934251-5f48bb80-d33d-11eb-9be9-227001125142.png)
+
+![Screen Shot 2021-06-22 at 9 35 47 AM](https://user-images.githubusercontent.com/80069382/122934306-6a035080-d33d-11eb-920a-13444f335681.png)
+
+![Screen Shot 2021-06-22 at 9 10 43 AM](https://user-images.githubusercontent.com/80069382/122934351-74bde580-d33d-11eb-8e5a-e55a6324f8fc.png)
+
+![Screen Shot 2021-06-22 at 7 54 59 AM](https://user-images.githubusercontent.com/80069382/122934469-8bfcd300-d33d-11eb-9613-51c9526fd5ff.png)
+
 
 
 #### Component Tree
