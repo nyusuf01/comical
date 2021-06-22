@@ -75,7 +75,6 @@ src
       |__ Nav.jsx
       |__ Footer.jsx
       |__ Search.jsx
-      |__ Filter.jsx
       |__ ComicCard.jsx
       |__ Comments.jsx
       |__ CommentCard.jsx
