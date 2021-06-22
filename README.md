@@ -1,4 +1,4 @@
-
+![Screen Shot 2021-06-22 at 7 54 59 AM](https://user-images.githubusercontent.com/80069382/122934469-8bfcd300-d33d-11eb-9613-51c9526fd5ff.png)
 
 # Comical
 
@@ -53,7 +53,7 @@
 
 ![Screen Shot 2021-06-22 at 9 10 43 AM](https://user-images.githubusercontent.com/80069382/122934351-74bde580-d33d-11eb-8e5a-e55a6324f8fc.png)
 
-![Screen Shot 2021-06-22 at 7 54 59 AM](https://user-images.githubusercontent.com/80069382/122934469-8bfcd300-d33d-11eb-9613-51c9526fd5ff.png)
+
 
 
 
