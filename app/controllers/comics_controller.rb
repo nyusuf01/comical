@@ -1,6 +1,6 @@
 class ComicsController < ApplicationController
   before_action :authorize_request, except: [:index]
-  before_action :set_book, only: [:update, :destroy]
+  before_action :set_comic, only: [:update, :destroy]
 
   # GET /comics
   def index
@@ -36,17 +36,17 @@ class ComicsController < ApplicationController
 
   # DELETE /comics/1
   def destroy
-    @book.destroy
+    @comic.destroy
   end
 
   private
     # Use callbacks to share common setup or constraints between actions.
-    def set_book
-      @book = @current_user.comics.find(params[:id])
+    def set_comic
+      @comic = @current_user.comics.find(params[:id])
     end
 
     # Only allow a list of trusted parameters through.
-    def book_params
-      params.require(:book).permit(:title, :author, :summary, :image_url)
+    def comic_params
+      params.require(:comic).permit(:title, :author, :summary, :image_url)
     end
 end

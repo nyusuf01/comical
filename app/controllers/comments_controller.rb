@@ -3,7 +3,7 @@ class CommentsController < ApplicationController
 
   # GET /comments
   def index
-    @commic = Comic.find(params[:comic_id])
+    @comic = Comic.find(params[:comic_id])
     @comments = Comment.where(comic_id: @comic.id)
     # https://support.workato.com/en/support/discussions/topics/1000091251
     render json: @comments.sort_by{|x| x[:created_at]}.reverse, include: :user
@@ -11,12 +11,14 @@ class CommentsController < ApplicationController
 
   #GET /comments/1
   def show
+    @comic = Comic.find(params[:comic_id])
     @comment = Comment.find(params[:id])
     render json: @comment 
   end
 
   # POST /comments
   def create
+    @comic = Comic.find(params[:comic_id])
     @comment = Comment.new(comment_params)
     if @comment.save
       render json: @comment, status: :created
@@ -27,6 +29,7 @@ class CommentsController < ApplicationController
 
   # PATCH/PUT /comments/1
   def update
+    @comic = Comic.find(params[:comic_id])
     if @comment.update(comment_params)
       render json: @comment
     else
@@ -36,6 +39,7 @@ class CommentsController < ApplicationController
 
   # DELETE /comments/1
   def destroy
+    @comic = Comic.find(params[:comic_id])
       @comment.destroy
   end
 
