@@ -15,7 +15,7 @@
 - _Full CRUD for the comic strip displays_
 - _Full CRUD for reviews_
 - _User authentication_
-- _Filter and search functions_
+- _Search functions for comics_
 - _A simple and intutitve UX_
 
 <br>
