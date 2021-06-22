@@ -1,3 +1,4 @@
+![Screen Shot 2021-06-22 at 7 54 59 AM](https://user-images.githubusercontent.com/80069382/122920470-708acb80-d32f-11eb-96dc-8f8f59866a9d.png)
 # Comical
 
 ## Overview
@@ -39,6 +40,11 @@
 
 #### Wireframes
 
+![Screen Shot 2021-06-22 at 7 54 59 AM](https://user-images.githubusercontent.com/80069382/122920537-83050500-d32f-11eb-9e4d-adb58805e66c.png)
+
+![Screen Shot 2021-06-22 at 7 55 12 AM](https://user-images.githubusercontent.com/80069382/122920589-8ef0c700-d32f-11eb-9482-6c7808e96a2d.png)
+
+![Screen Shot 2021-06-22 at 7 55 22 AM](https://user-images.githubusercontent.com/80069382/122920639-9c0db600-d32f-11eb-9150-f5fb0dcf6183.png)
 
 
 #### Component Tree
