@@ -47,7 +47,8 @@ https://www.figma.com/file/GI6OeA7hm8myqyMIhJk8Ab/Untitled?node-id=0%3A1
 
 ![Screen Shot 2021-06-22 at 7 55 12 AM](https://user-images.githubusercontent.com/80069382/122920589-8ef0c700-d32f-11eb-9482-6c7808e96a2d.png)
 
-<img width="423" alt="Screen Shot 2021-06-22 at 1 09 45 PM" src="https://user-images.githubusercontent.com/80069382/122970024-58c93c80-d35b-11eb-925a-0901e76f48d5.png">
+![Screen Shot 2021-06-22 at 1 15 11 PM](https://user-images.githubusercontent.com/80069382/122970509-050b2300-d35c-11eb-9bff-0ea1d1b01228.png)
+
 
 
 ![Screen Shot 2021-06-22 at 9 35 33 AM](https://user-images.githubusercontent.com/80069382/122934251-5f48bb80-d33d-11eb-9be9-227001125142.png)
@@ -147,7 +148,8 @@ src
 
 #### ERD Model
 
-<img width="528" alt="Screen Shot 2021-06-22 at 10 56 28 AM" src="https://user-images.githubusercontent.com/80069382/122948097-a8523d00-d348-11eb-9503-1cd4b3d9e291.png">
+![Screen Shot 2021-06-22 at 1 15 44 PM](https://user-images.githubusercontent.com/80069382/122970544-0f2d2180-d35c-11eb-9f69-8caee0abb564.png)
+
 
 
 <br>
