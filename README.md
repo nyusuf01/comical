@@ -123,9 +123,24 @@ src
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
 | Create backend models    |    H     |     2 hrs      |      hrs     |    TBD   |
 | Create backend controllers |    H     |     2 hrs      |      hrs     |     TBD     |
-| Build all backend endpoints |    H    |     4 hrs      |      hrs     |     TBD     |
+| Test full CRUD on backend |    H    |     2 hrs      |      hrs     |     TBD     |
+| Authorization |    H    |     3 hrs      |      hrs     |     TBD     |
+| React App framework and folder structure. Installing dependencies, |    H    |     2 hrs      |      hrs     |     TBD     |
+| Build api-config and auth files |    H    |     3 hrs      |      hrs     |     TBD     |
+| Layout screen and components |    H    |     2 hrs      |      hrs     |     TBD     |
+| Login and Sign Up Screens |    H    |     2 hrs      |      hrs     |     TBD     |
+| ComicsContainer and App.js |    H    |     2 hrs      |      hrs     |     TBD     |
+| Build Comics screen and ComicCard to view all comic strips |    H    |     3 hrs      |      hrs     |     TBD     |
+| CommicDetails screen |    H    |     3 hrs      |      hrs     |     TBD     |
+| Create and Edit screens |    H    |     3 hrs      |      hrs     |     TBD     |
+| Comment components |    H    |     3 hrs      |      hrs     |     TBD     |
+| Building CreateComment |    H    |     3 hrs      |      hrs     |     TBD     |
+| Media Queries |    H    |     3 hrs      |      hrs     |     TBD     |
+| Extra CSS |    H    |     3 hrs      |      hrs     |     TBD     |
+| Deployment |    H    |     1 hrs      |      hrs     |     TBD     |
+| Total |    H    |     42 hrs      |      hrs     |     TBD     |
 
-> _Why is this necessary? Time frames are key to the development cycle. You have limited time to code your app, and your estimates can then be used to evaluate possibilities of your MVP and post-MVP based on time needed. It's best you assume an additional hour for each component, as well as a few hours added to the total time, to play it safe._
+
 
 <br>
 
