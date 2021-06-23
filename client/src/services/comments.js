@@ -5,6 +5,11 @@ export const getAllComments = async (id) => {
   return resp.data;
 };
 
+export const getOneComment = async (comicId, id) => {
+  const resp = await api.get(`/comics/${comicId}/comments/${id}`);
+  return resp.data;
+};
+
 export const postComment = async (comicId, commentData) => {
   const resp = await api.post(`/comics/${comicId}/comments`, {
     comment: commentData,

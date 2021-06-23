@@ -16,7 +16,7 @@ User.destroy_all
 
 puts "#{User.count} users created"
 
-@comic1 = Comic.create!(title: 'Garfield', author: 'Jim Davis', summary: 'July 08, 1980', image_url: 'https://static.wikia.nocookie.net/garfield/images/0/0d/1980-07-08.gif/', user: @user)
+@comic1 = Comic.create!(title: 'Garfield', author: 'Jim Davis', summary: 'July 08, 1980', image_url: 'https://i.pinimg.com/originals/e7/eb/b0/e7ebb04203a1c55e2a7fc1412393e916.gif', user: @user)
 
 @comic2 = Comic.create!(title: 'Garfield', author: 'Jim Davis', summary: 'July 27, 1981', image_url: 'https://i.pinimg.com/originals/86/c3/d9/86c3d9307a5450b39f301dec38cd96c0.gif', user: @user)
 

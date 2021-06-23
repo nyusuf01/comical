@@ -53,7 +53,7 @@ function App() {
           <Route path="/signup">
             <SignUp handleSignUp={handleSignUp} />
           </Route>
-          <Route path="/">
+          <Route path="/comics">
             <ComicsContainer currentUser={currentUser} />
           </Route>
         </Switch>

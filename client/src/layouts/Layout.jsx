@@ -6,14 +6,15 @@ function Layout(props) {
 
   return (
     <div>
-      <header>
+      <nav>
         <Link to="/">
           <p>Comical</p>
         </Link>
         {currentUser ? (
           <>
             <p>Hi, {currentUser.username}!</p>
-            <Link to="/add">Add Comic Strip</Link>
+            <Link to="/comics/add">Add Comic</Link>
+            <Link to="/comics">Explore</Link>
             <button onClick={handleLogout}>Logout</button>
           </>
         ) : (
@@ -22,7 +23,7 @@ function Layout(props) {
             <Link to="/signup">Sign Up</Link>
           </>
         )}
-      </header>
+      </nav>
       <hr />
       {props.children}
 
