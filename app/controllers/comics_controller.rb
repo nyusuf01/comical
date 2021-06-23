@@ -3,6 +3,7 @@ class ComicsController < ApplicationController
   before_action :set_comic, only: [:update, :destroy]
 
   # GET /comics
+  
   def index
     @comics = Comic.all
     render json: @comics.limit(20).sort_by{|x| x[:created_at]}.reverse

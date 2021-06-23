@@ -28,6 +28,7 @@ class CommentsController < ApplicationController
   end
 
   # PATCH/PUT /comments/1
+  
   def update
     @comic = Comic.find(params[:comic_id])
     if @comment.update(comment_params)

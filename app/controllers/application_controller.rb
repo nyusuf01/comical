@@ -8,6 +8,7 @@ class ApplicationController < ActionController::API
   end
 
   # decode jwt
+  
   def decode(token)
     decoded = JWT.decode(token, SECRET_KEY)[0]
     HashWithIndifferentAccess.new decoded
