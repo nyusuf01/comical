@@ -9,6 +9,7 @@ import {
   removeToken,
   verifyUser,
 } from "./services/auth";
+import ComicsContainer from "./containers/ComicsContainer";
 import "./App.css";
 
 function App() {
@@ -51,6 +52,9 @@ function App() {
           </Route>
           <Route path="/signup">
             <SignUp handleSignUp={handleSignUp} />
+          </Route>
+          <Route path="/">
+            <ComicsContainer currentUser={currentUser} />
           </Route>
         </Switch>
       </Layout>

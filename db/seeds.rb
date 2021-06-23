@@ -18,11 +18,11 @@ puts "#{User.count} users created"
 
 @comic1 = Comic.create!(title: 'Garfield', author: 'Jim Davis', summary: 'July 08, 1980', image_url: 'https://static.wikia.nocookie.net/garfield/images/0/0d/1980-07-08.gif/', user: @user)
 
-@comic2 = Comic.create!(title: 'Garfield', author: 'Jim Davis', summary: 'July 27, 1981', image_url: 'https://static.wikia.nocookie.net/garfield/images/6/6c/1981-07-27.gif/', user: @user)
+@comic2 = Comic.create!(title: 'Garfield', author: 'Jim Davis', summary: 'July 27, 1981', image_url: 'https://static.wikia.nocookie.net/garfield-comic-strips/images/6/6c/1981-07-27.gif/revision/latest?cb=20190321220708', user: @user)
 
 @comic3 = Comic.create!(title: 'Cyanide & Happiness', author: 'Ron DenBleyker', summary: 'October 16, 2020', image_url: 'https://files.explosm.net/comics/Rob/halloween.png?t=295289', user: @another)
 
-@comic4 = Comic.create!(title: 'Garfield', author: 'Jim Davis', summary: 'July 21, 2020', image_url: 'https://static.wikia.nocookie.net/garfield/images/0/08/2020-07-21.gif/', user: @another)
+@comic4 = Comic.create!(title: 'Garfield', author: 'Jim Davis', summary: 'July 21, 2020', image_url: 'https://img.koreatimes.co.kr/upload/newsV2/images/202007/3cfbb55b62184eabba3a05b8e8eac971.jpg', user: @another)
 
 puts "#{Comic.count} comic strips created"
 
