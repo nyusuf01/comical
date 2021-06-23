@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import { useHistory, Switch, Route } from "react-router-dom";
 import Layout from "./layouts/Layout";
+import SignUp from "./screens/SignUp";
+import LogIn from "./screens/LogIn";
 import {
   loginUser,
   signUpUser,
@@ -43,7 +45,14 @@ function App() {
   return (
     <div className="App">
       <Layout currentUser={currentUser} handleLogout={handleLogout}>
-        <Switch></Switch>
+        <Switch>
+          <Route path="/login">
+            <LogIn handleLogin={handleLogin} />
+          </Route>
+          <Route path="/signup">
+            <SignUp handleSignUp={handleSignUp} />
+          </Route>
+        </Switch>
       </Layout>
     </div>
   );
