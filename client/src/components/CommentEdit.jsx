@@ -2,26 +2,31 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 
 function CommentEdit(props) {
-  const { handleOpen, commentUpdate, currentUser, comments } = props;
-  const { comicId, id } = useParams();
   const [commentData, setCommentData] = useState({
     content: "",
   });
   const { content } = commentData;
+  const params = useParams();
+  const { handleOpen, commentUpdate, comments, comic } = props;
+
+  console.log(comic?.id, params);
+
   useEffect(() => {
     const prefillCommentData = () => {
       const commentItem = comments.find(
-        (comment) => comment?.id === Number(id)
+        (comment) => comment?.id === Number(params.id)
       );
       console.log(commentItem);
       setCommentData({
         content: commentItem?.content,
+        comic_id: commentItem?.comic_id,
+        user_id: commentItem?.user_id,
       });
     };
-    if (comments.length) {
+    if (comments?.length) {
       prefillCommentData();
     }
-  }, [comments, id]);
+  }, [comments, params.id]);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -37,21 +42,21 @@ function CommentEdit(props) {
         <form
           onSubmit={(e) => {
             e.preventDefault();
-            commentUpdate(comicId, id, commentData);
+            commentUpdate(comic?.id, params.id, commentData);
             handleOpen(false);
           }}
         >
           <label>
             Edit Comment:
-            <input
+            <textarea
               type="text"
               name="content"
               value={content}
               onChange={handleChange}
             />
           </label>
+          <button className="edit">UPDATE</button>
           <button onClick={() => handleOpen(false)}>CANCEL</button>
-          <button type="submit">SAVE</button>
         </form>
       </div>
     </div>

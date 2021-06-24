@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, Route } from "react-router-dom";
 import CommentEdit from "./CommentEdit";
 
 function Comments(props) {
@@ -8,30 +8,42 @@ function Comments(props) {
   return (
     <div>
       {comments.map((comment) => (
-        <div key={comment.id}>
-          <h6>{comment.user?.username}</h6>
-          <p>{comment.content}</p>
-          {currentUser?.id === comment?.user_id && (
-            <>
-              <Link to={`/comics/${comic?.id}/comments/${comment.id}`}>
-                <button onClick={() => handleOpen(comment.id)}>EDIT</button>
-              </Link>
-              <button onClick={() => commentDelete(comic?.id, comment.id)}>
-                DELETE
-              </button>
-            </>
-          )}
+        <div key={comment?.id}>
+          <div>
+            <h6>
+              {comment?.user_id === currentUser?.id
+                ? currentUser?.username
+                : comment?.user?.username}
+            </h6>
+
+            {currentUser?.id === comment?.user_id && (
+              <div>
+                <Link to={`/comics/${comic?.id}/comments/${comment?.id}`}>
+                  <button
+                    className="edit"
+                    onClick={() => handleOpen(comment?.id)}
+                  >
+                    EDIT
+                  </button>
+                </Link>
+                <button onClick={() => commentDelete(comic?.id, comment?.id)}>
+                  DELETE
+                </button>
+              </div>
+            )}
+          </div>
+          <p>{comment?.content}</p>
         </div>
       ))}
       {open && (
-        <CommentEdit
-          // open={open}
-          handleOpen={handleOpen}
-          commentUpdate={commentUpdate}
-          comic={comic}
-          currentUser={currentUser}
-          comments={comments}
-        />
+        <Route path="/comics/:comic_id/comments/:id">
+          <CommentEdit
+            comic={comic}
+            comments={comments}
+            handleOpen={handleOpen}
+            commentUpdate={commentUpdate}
+          />
+        </Route>
       )}
     </div>
   );
