@@ -26,7 +26,7 @@ function CommentCreate(props) {
       }}
     >
       <label>
-        What did you think of {comic?.title}?
+        Leave a comment for {comic?.title}:
         <input
           type="text"
           name="content"

@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import CommentEdit from "./CommentEdit";
 
 function Comments(props) {
+  const [open, handleOpen] = useState(false);
   const { comments, currentUser, commentUpdate, commentDelete, comic } = props;
   return (
     <div>
@@ -11,8 +13,8 @@ function Comments(props) {
           <p>{comment.content}</p>
           {currentUser?.id === comment?.user_id && (
             <>
-              <Link to={`comic/${comic?.id}/comments/${comment.id}`}>
-                <button onClick={commentUpdate}>EDIT</button>
+              <Link to={`/comics/${comic?.id}/comments/${comment.id}`}>
+                <button onClick={() => handleOpen(comment.id)}>EDIT</button>
               </Link>
               <button onClick={() => commentDelete(comic?.id, comment.id)}>
                 DELETE
@@ -21,6 +23,16 @@ function Comments(props) {
           )}
         </div>
       ))}
+      {open && (
+        <CommentEdit
+          // open={open}
+          handleOpen={handleOpen}
+          commentUpdate={commentUpdate}
+          comic={comic}
+          currentUser={currentUser}
+          comments={comments}
+        />
+      )}
     </div>
   );
 }

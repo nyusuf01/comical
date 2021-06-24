@@ -13,8 +13,8 @@ function Layout(props) {
         {currentUser ? (
           <>
             <p>Hi, {currentUser.username}!</p>
-            <Link to="/comics/add">Add Comic</Link>
-            <Link to="/comics">Explore</Link>
+            <Link to="/comics/add">Add A Comic</Link>
+            <Link to="/comics">Check It Out</Link>
             <button onClick={handleLogout}>Logout</button>
           </>
         ) : (
