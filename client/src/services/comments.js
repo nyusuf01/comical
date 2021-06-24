@@ -1,7 +1,7 @@
 import api from "./api-config";
 
 export const getAllComments = async (id) => {
-  const resp = await api.get(`/books/${id}/comments`);
+  const resp = await api.get(`/comics/${id}/comments`);
   return resp.data;
 };
 
