@@ -23,9 +23,8 @@ function ComicDetails(props) {
         <img src={comic?.image_url} alt={comic?.title} />
         <div className="comic-details2">
           <div>
-            <h5>{comic?.title}</h5>
-            <h4>by {comic?.author}</h4>
-            <br></br>
+            <h4>{comic?.title}</h4>
+            <h5>by {comic?.author}</h5>
             <p>{comic?.summary}</p>
           </div>
           {currentUser?.id === comic?.user_id && (

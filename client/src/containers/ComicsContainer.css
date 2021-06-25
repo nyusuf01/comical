@@ -27,16 +27,25 @@
   transition: 250ms all;
 }
 
+.card img {
+  width: 500px;
+}
+
 .card:hover {
   transform: scale(1.02);
 }
 
 .comic-details {
-  display: flex;
+  /* display: flex; */
   /* align-items: space-between; */
   text-align: left;
   width: 700px;
   margin: 70px auto;
+}
+
+.comic-details img {
+  width: 400px;
+  height: auto;
 }
 
 .comic-details2 {
