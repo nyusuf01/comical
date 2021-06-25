@@ -40,7 +40,7 @@ function ComicEdit(props) {
       <form
         onSubmit={(e) => {
           e.preventDefault();
-          handleUpdate(formData);
+          handleUpdate(id, formData);
         }}
       >
         <h3>Edit</h3>
