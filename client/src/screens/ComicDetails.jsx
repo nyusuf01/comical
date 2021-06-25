@@ -18,26 +18,26 @@ function ComicDetails(props) {
   }, []);
 
   return (
-    // <Layout>
     <>
       <div className="comic-details">
         <img src={comic?.image_url} alt={comic?.title} />
-        <h3>{comic?.title}</h3>
-        <h4>by {comic?.author}</h4>
-        <p>{comic?.summary}</p>
+        <div className="comic-details2">
+          <div>
+            <h5>{comic?.title}</h5>
+            <h4>by {comic?.author}</h4>
+            <br></br>
+            <p>{comic?.summary}</p>
+          </div>
+          {currentUser?.id === comic?.user_id && (
+            <div className="details-buttons">
+              <Link to={`/comics/${id}/edit`}>
+                <button className="edit">EDIT</button>
+              </Link>
+              <button onClick={() => handleDelete(comic.id)}>DELETE</button>
+            </div>
+          )}
+        </div>
       </div>
-
-      {/* </Layout> */}
-      {currentUser?.id === comic?.user_id && (
-        <>
-          <Link to={`/comics/${id}/edit`}>
-            <button>EDIT</button>
-          </Link>
-          <button onClick={() => handleDelete(comic.id)}>DELETE</button>
-        </>
-      )}
-
-      <div>Comments!</div>
       <CommentsContainer comic={comic} id={id} currentUser={currentUser} />
     </>
   );

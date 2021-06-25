@@ -1,0 +1,25 @@
+.comments-container {
+  width: 700px;
+  margin: 10px auto;
+  padding-top: 25px;
+  border: solid black 1px;
+  background-color: rgba(255, 255, 255, 1);
+  text-align: left;
+}
+
+.comment {
+  margin: 25px;
+  border: black solid 1px;
+  padding: 10px;
+}
+
+.comment-buttons {
+}
+
+.create-comment {
+  height: 250px;
+}
+
+.create-comment label {
+  text-align: left;
+}

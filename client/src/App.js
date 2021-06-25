@@ -11,6 +11,8 @@ import {
 } from "./services/auth";
 import ComicsContainer from "./containers/ComicsContainer";
 import "./App.css";
+import "./containers/ComicsContainer.css";
+import "./containers/CommentsContainer.css";
 
 function App() {
   const [currentUser, setCurrentUser] = useState(null);

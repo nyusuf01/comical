@@ -5,7 +5,7 @@ import Card from "../components/Card";
 function Comics(props) {
   const { id, title, image_url, currentUser } = props;
   return (
-    <div>
+    <div classname="comic">
       {currentUser ? (
         <Link to={`/comics/${id}`}>
           <Card title={title} image={image_url} />

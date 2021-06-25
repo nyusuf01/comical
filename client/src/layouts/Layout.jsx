@@ -1,33 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Nav from "../components/Nav";
+import Footer from "../components/Footer";
 
 function Layout(props) {
   const { currentUser, handleLogout } = props;
 
   return (
-    <div>
-      <nav>
-        <Link to="/">
-          <p>Comical</p>
-        </Link>
-        {currentUser ? (
-          <>
-            <p>Hi, {currentUser.username}!</p>
-            <Link to="/comics/add">Add A Comic</Link>
-            <Link to="/comics">Check It Out</Link>
-            <button onClick={handleLogout}>Logout</button>
-          </>
-        ) : (
-          <>
-            <Link to="/login">Log In</Link>
-            <Link to="/signup">Sign Up</Link>
-          </>
-        )}
-      </nav>
-      <hr />
-      {props.children}
-
-      <footer></footer>
+    <div className="layout">
+      <Nav currentUser={currentUser} handleLogout={handleLogout} />
+      <div className="children">{props.children} </div>
+      <Footer />
     </div>
   );
 }

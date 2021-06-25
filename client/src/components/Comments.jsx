@@ -8,7 +8,7 @@ function Comments(props) {
   return (
     <div>
       {comments.map((comment) => (
-        <div key={comment?.id}>
+        <div className="comment" key={comment?.id}>
           <div>
             <h6>
               {comment?.user_id === currentUser?.id
