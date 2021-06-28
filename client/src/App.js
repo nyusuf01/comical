@@ -1,18 +1,23 @@
 import { useState, useEffect } from "react";
 import { useHistory, Switch, Route } from "react-router-dom";
+// styling imports
+import "./App.css";
+import "./components/Nav.css";
+import "./components/Footer.css";
+import "./containers/ComicsContainer.css";
+import "./containers/CommentsContainer.css";
+// component imports
 import Layout from "./layouts/Layout";
 import SignUp from "./screens/SignUp";
 import LogIn from "./screens/LogIn";
+import ComicsContainer from "./containers/ComicsContainer";
+
 import {
   loginUser,
   signUpUser,
   removeToken,
   verifyUser,
 } from "./services/auth";
-import ComicsContainer from "./containers/ComicsContainer";
-import "./App.css";
-import "./containers/ComicsContainer.css";
-import "./containers/CommentsContainer.css";
 
 function App() {
   const [currentUser, setCurrentUser] = useState(null);
@@ -55,7 +60,7 @@ function App() {
           <Route path="/signup">
             <SignUp handleSignUp={handleSignUp} />
           </Route>
-          <Route path="/comics">
+          <Route path="/">
             <ComicsContainer currentUser={currentUser} />
           </Route>
         </Switch>
@@ -63,4 +68,5 @@ function App() {
     </div>
   );
 }
+
 export default App;

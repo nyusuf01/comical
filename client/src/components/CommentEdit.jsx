@@ -5,6 +5,7 @@ function CommentEdit(props) {
   const [commentData, setCommentData] = useState({
     content: "",
   });
+
   const { content } = commentData;
   const params = useParams();
   const { handleOpen, commentUpdate, comments, comic } = props;
@@ -37,8 +38,8 @@ function CommentEdit(props) {
   };
 
   return (
-    <div className="comment-edit-container" onClick={(e) => handleOpen(false)}>
-      <div className="comment-edit" onClick={(e) => e.stopPropagation()}>
+    <div className="modal-container" onClick={(e) => handleOpen(false)}>
+      <div className="modal" onClick={(e) => e.stopPropagation()}>
         <form
           onSubmit={(e) => {
             e.preventDefault();
@@ -47,16 +48,20 @@ function CommentEdit(props) {
           }}
         >
           <label>
-            Edit Comment:
+            Edit comment:
             <textarea
               type="text"
+              rows={10}
+              cols={78}
               name="content"
               value={content}
               onChange={handleChange}
             />
           </label>
-          <button className="edit">UPDATE</button>
-          <button onClick={() => handleOpen(false)}>CANCEL</button>
+          <div className="modal-buttons">
+            <button className="edit">UPDATE</button>
+            <button onClick={() => handleOpen(false)}>CANCEL</button>
+          </div>
         </form>
       </div>
     </div>

@@ -1,22 +1,25 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import { Switch, Route, useHistory } from "react-router-dom";
+
 import Comics from "../screens/Comics";
 import ComicDetails from "../screens/ComicDetails";
-import ComicEdit from "../screens/ComicEdit";
 import ComicCreate from "../screens/ComicCreate";
+import ComicEdit from "../screens/ComicEdit";
+import Search from "../components/Search";
+
 import {
   getAllComics,
   postComic,
   putComic,
   destroyComic,
 } from "../services/comics";
-import Search from "../components/Search";
 
 function ComicsContainer(props) {
   const [comics, setComics] = useState([]);
   const [searchResults, setSearchResults] = useState([]);
   const { currentUser } = props;
+  const [toggleFetch, setToggleFetch] = useState(false);
   const history = useHistory();
 
   useEffect(() => {
@@ -26,7 +29,7 @@ function ComicsContainer(props) {
       setSearchResults(comicData);
     };
     fetchComics();
-  }, []);
+  }, [toggleFetch]);
 
   const handleSearch = (e) => {
     const query = comics.filter((comic) => {
@@ -38,12 +41,17 @@ function ComicsContainer(props) {
     setSearchResults(query);
   };
 
-  const handleSubmit = (e) => e.preventDefault();
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setToggleFetch((curr) => !curr);
+  };
 
   const handleCreate = async (comicData) => {
     const newComic = await postComic(comicData);
     setComics((prevState) => [...prevState, newComic]);
-    history.push("/comics");
+    setToggleFetch((curr) => !curr);
+
+    history.push("/");
   };
 
   const handleUpdate = async (id, comicData) => {
@@ -53,16 +61,18 @@ function ComicsContainer(props) {
         return comic.id === Number(id) ? updatedComic : comic;
       })
     );
-    history.push("/comics");
+    setToggleFetch((curr) => !curr);
+    history.push("/");
   };
 
   const handleDelete = async (id) => {
     await destroyComic(id);
     setComics((prevState) => prevState.filter((comic) => comic.id !== id));
-    history.push("/comics");
+    setToggleFetch((curr) => !curr);
+    history.push("/");
   };
 
-  const searchComics = searchResults.map((comic, index) => (
+  const comicSearch = searchResults.map((comic, index) => (
     <Comics
       key={index}
       id={comic.id}
@@ -87,9 +97,9 @@ function ComicsContainer(props) {
           currentUser={currentUser}
         />
       </Route>
-      <Route path="/comics">
+      <Route path="/">
         <Search onSubmit={handleSubmit} onChange={handleSearch} />
-        <div className="comics">{searchComics}</div>
+        <div className="comics">{comicSearch}</div>
       </Route>
     </Switch>
   );

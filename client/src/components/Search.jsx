@@ -1,10 +1,9 @@
 import React from "react";
 
 function Search(props) {
-  // const { onSubmit, onChange } = props;
-
   return (
     <form className="search" onSubmit={(e) => props.onSubmit(e)}>
+      <label></label>
       <input
         type="text"
         name="search"

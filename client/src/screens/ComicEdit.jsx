@@ -73,8 +73,10 @@ function ComicEdit(props) {
         </label>
         <label>
           Summary:
-          <input
+          <textarea
             type="text"
+            rows={10}
+            cols={78}
             name="summary"
             value={summary}
             onChange={handleChange}

@@ -24,20 +24,24 @@ function CommentCreate(props) {
       onSubmit={(e) => {
         e.preventDefault();
         commentCreate(params.id, commentData);
+        commentData.content = "";
       }}
     >
       <label>
-        Leave a comment for {comic?.title}:<br></br>
+        <h6>Leave a comment for {comic?.title}?</h6>
+        <br></br>
         <textarea
           type="text"
-          rows={10}
+          rows={8}
           cols={78}
           name="content"
           value={content}
           onChange={handleChange}
         />
       </label>
-      <button>POST</button>
+      <div>
+        <button>POST</button>
+      </div>
     </form>
   );
 }

@@ -5,6 +5,8 @@ import CommentEdit from "./CommentEdit";
 function Comments(props) {
   const [open, handleOpen] = useState(false);
   const { comments, currentUser, commentUpdate, commentDelete, comic } = props;
+  console.log(comments);
+  console.log(comic);
   return (
     <div>
       {comments.map((comment) => (
@@ -15,7 +17,6 @@ function Comments(props) {
                 ? currentUser?.username
                 : comment?.user?.username}
             </h6>
-
             {currentUser?.id === comment?.user_id && (
               <div>
                 <Link to={`/comics/${comic?.id}/comments/${comment?.id}`}>

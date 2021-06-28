@@ -5,13 +5,15 @@ import Card from "../components/Card";
 function Comics(props) {
   const { id, title, image_url, currentUser } = props;
   return (
-    <div classname="comic">
+    <div className="comic">
       {currentUser ? (
         <Link to={`/comics/${id}`}>
           <Card title={title} image={image_url} />
         </Link>
       ) : (
-        <Card title={title} image={image_url} />
+        <Link to="/login">
+          <Card title={title} image={image_url} />
+        </Link>
       )}
     </div>
   );

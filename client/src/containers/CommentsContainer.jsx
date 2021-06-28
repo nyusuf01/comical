@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-// import { useHistory } from "react-router-dom";
 import CommentCreate from "../components/CommentCreate";
 import Comments from "../components/Comments";
 import {
@@ -12,7 +11,6 @@ import {
 function CommentsContainer(props) {
   const { comic, id, currentUser } = props;
   const [comments, setComments] = useState([]);
-  // const history = useHistory();
 
   useEffect(() => {
     const fetchComments = async (comicId) => {
@@ -25,7 +23,6 @@ function CommentsContainer(props) {
   const commentCreate = async (comicId, commentData) => {
     const newComment = await postComment(comicId, commentData);
     setComments((prevState) => [...prevState, newComment]);
-    // history.push(`/comics`);
   };
 
   const commentUpdate = async (comicId, id, commentData) => {

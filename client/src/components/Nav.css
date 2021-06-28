@@ -1,0 +1,188 @@
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #f7fefe;
+  width: 100vw;
+  min-height: 10vh;
+}
+
+.nav-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 0;
+  height: 100%;
+  width: 100vw;
+  align-items: center;
+}
+
+.tbn-logo a {
+  display: flex;
+  align-items: flex-end;
+  text-decoration: none;
+  height: 15vh;
+  width: auto;
+  padding-left: 20px;
+}
+
+.app-name {
+  text-align: left;
+  font-weight: bold;
+  font-size: 10vh;
+  color: rgba(11, 151, 245, 0.973);
+}
+
+.nav-options {
+  justify-content: space-around;
+
+  flex-direction: row;
+  align-items: center;
+}
+
+.nav-options p {
+  font-size: 3vw;
+  margin-right: 15px;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+
+  height: 100%;
+
+  justify-content: space-evenly;
+  margin-right: 20px;
+  margin-top: 0;
+}
+
+.options a,
+.options button,
+.guest-options a {
+  font-size: 3vh;
+  margin-top: 8px;
+}
+
+.guest-options {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+  margin-right: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  width: 100vw;
+  border: 1px solid black;
+  background-color: #efefef;
+}
+
+nav {
+  display: flex;
+}
+
+p {
+  margin: 4px 8px;
+}
+
+.fa-hamburger {
+  display: none;
+  text-align: right;
+  padding: 4px;
+}
+
+@media screen and (max-width: 425px) {
+  header {
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100vw;
+    border: 1px solid transparent;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: #efefef;
+  }
+
+  .fa-hamburger {
+    display: block;
+  }
+}
+
+/* media queries */
+
+@media screen and (max-width: 830px) {
+  .nav {
+    flex-direction: row;
+    width: 100vw;
+    min-height: 10vh;
+  }
+
+  .nav-details {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 0;
+    height: 100%;
+    width: 100vw;
+  }
+
+  .tbn-logo a {
+    display: flex;
+    align-items: flex-end;
+    text-decoration: none;
+  }
+
+  .app-name {
+    font-size: 4.5vh;
+  }
+
+  .nav-options {
+    flex-direction: row;
+    align-items: center;
+    margin-top: 0px;
+  }
+
+  .nav-options p {
+    display: none;
+  }
+
+  .options {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-right: 20px;
+    margin-top: 0;
+  }
+
+  .options a,
+  .options button,
+  .guest-options a {
+    font-size: 3vh;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .options {
+    margin-right: 0px;
+  }
+
+  .nav-options {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-right: 0px;
+    margin-top: 0;
+  }
+
+  .nav-options a {
+    font-size: 3vh;
+  }
+
+  .guest-options {
+    margin-right: 0px;
+  }
+}

@@ -25,7 +25,7 @@ function ComicCreate(props) {
         handleCreate(formData);
       }}
     >
-      <h3>Add A Comic</h3>
+      <h3>Add A Comic Strip</h3>
       <label>
         Title:
         <input type="text" name="title" value={title} onChange={handleChange} />
@@ -50,7 +50,9 @@ function ComicCreate(props) {
       </label>
       <label>
         Summary:
-        <input
+        <textarea
+          rows={10}
+          cols={78}
           type="text"
           name="summary"
           value={summary}

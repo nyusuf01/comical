@@ -1,13 +1,24 @@
+.background {
+  background-image: url("https://monsternerd.files.wordpress.com/2009/10/cartoons_calvin_and_hobbes_chocolate_frosted_sugar_bombs_03_pretty_wired1000x319x256.gif");
+  background-color: white;
+}
+
 .search {
-  align-items: flex-end;
-  height: 40px;
-  margin: 30px 50px 20px 0px;
+  flex-direction: row;
+  justify-content: flex-end;
+  height: 0vh;
+  width: 75vw;
+  margin: 50px auto;
+}
+
+.search label {
+  justify-content: flex-end;
 }
 
 .search input {
-  width: 300px;
   padding: 5px;
   margin-left: 10px;
+  font-family: "Quicksand", sans-serif;
 }
 
 .comics {
@@ -23,12 +34,8 @@
   justify-content: space-evenly;
   padding: 20px;
   margin: 20px;
-  border: grey solid 1px;
-  transition: 250ms all;
-}
 
-.card img {
-  width: 500px;
+  transition: 250ms all;
 }
 
 .card:hover {
@@ -37,22 +44,81 @@
 
 .comic-details {
   /* display: flex; */
-  /* align-items: space-between; */
   text-align: left;
-  width: 700px;
+  /* max-width: 750px; */
   margin: 70px auto;
+  font-family: "Quicksand", sans-serif;
+  letter-spacing: 1px;
+  line-height: 150%;
+  align-items: center;
+  text-align: center;
 }
 
 .comic-details img {
-  width: 400px;
-  height: auto;
+  /* height: 400px; */
+  width: 600px;
 }
 
 .comic-details2 {
-  /* display: flex; */
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
+  margin-left: 10px;
+}
+
+.comic-details p {
+  /* text-indent: 3ch; */
+  /* text-align: justify; */
+  align-items: center;
+  text-align: center;
 }
 
 .details-buttons {
   text-align: right;
+}
+
+h5 {
+  font-size: 150%;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1000px) {
+  .comic-details {
+    max-width: 600px;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .search {
+    justify-content: center;
+    width: 90vw;
+  }
+
+  .search label {
+    justify-content: center;
+    width: 25%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .comic-details {
+    max-width: 90vw;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .comic-details {
+    max-width: 90vw;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .comic-details img {
+    margin-bottom: 15px;
+  }
+
+  .card {
+    margin: 10px 0px;
+  }
 }

@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
 
@@ -9,8 +8,13 @@ function Layout(props) {
   return (
     <div className="layout">
       <Nav currentUser={currentUser} handleLogout={handleLogout} />
-      <div className="children">{props.children} </div>
-      <Footer />
+      <div className="children">{props.children}</div>
+      <div className="footer1">
+        <Footer />
+      </div>
+      <div className="footer2">
+        <Footer />
+      </div>
     </div>
   );
 }
