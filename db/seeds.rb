@@ -24,6 +24,18 @@ puts "#{User.count} users created"
 
 @comic4 = Comic.create!(title: 'Garfield', author: 'Jim Davis', summary: 'July 21, 2020', image_url: 'https://img.koreatimes.co.kr/upload/newsV2/images/202007/3cfbb55b62184eabba3a05b8e8eac971.jpg', user: @another)
 
+@comic5 = Comic.create!(title: 'Garfield', author: 'Jim Davis', summary: '03-30', image_url: 'https://i.chzbgr.com/original/2661637/h2DBAE612/garfield-comics-will-always-be-funny', user: @user)
+
+@comic6 = Comic.create!(title: 'Garfield', author: 'Jim Davis', summary: '08-16', image_url: 'https://qph.fs.quoracdn.net/main-qimg-1b9a87223e4008a3baa2950af5c0dea3', user: @user)
+
+@comic7 = Comic.create!(title: 'Garfield', author: 'Jim Davis', summary: 'April 18, 2019', image_url: 'https://i.pinimg.com/originals/6d/97/2e/6d972e76d47632a668970eaba0cf5362.gif', user: @user)
+
+@comic8 = Comic.create!(title: 'Garfield', author: 'Jim Davis', summary: 'February 11, 2019', image_url: 'https://i.pinimg.com/originals/6a/78/0f/6a780feb04c15620aae87568c8dad057.gif', user: @user)
+
+@comic9 = Comic.create!(title: 'Garfield', author: 'Jim Davis', summary: 'October 05, 2000', image_url: 'https://lh3.googleusercontent.com/proxy/kkHALCYoCFfj81XRJtfWw8IGmZWkSe0RLRSojD104viyJCaseA1BkohuOLTZhzKAkY5YZPVc36cb5uwy00Tx1fM4KL-O2kB4th-I0FKNCA8_2959AWyugG33', user: @user)
+
+@comic9 = Comic.create!(title: 'Garfield', author: 'Jim Davis', summary: '06-21', image_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9P61sKRpz_VSLBE72grWQGqXJw79zCd14EIMnY9EKkwWiUqevLg1YDRcskYBuICZmog&usqp=CAU', user: @user)
+
 puts "#{Comic.count} comic strips created"
 
 
@@ -31,7 +43,7 @@ Comment.create!(content: 'I love Garfield!', user: @another, comic: @comic1)
 
 Comment.create!(content: 'LOL', user: @user, comic: @comic1)
 
-Comment.create!(content: 'Spooky', user: @user, comic: @comic3)
+Comment.create!(content: 'Scary', user: @user, comic: @comic3)
 
 Comment.create!(content: 'LOL!', user: @another, comic: @comic3)
 

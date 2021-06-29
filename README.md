@@ -149,7 +149,8 @@ src
 
 ## Code Showcase
 
-> const handleChange = (e) => {
+```
+ const handleChange = (e) => {
 
     const { name, value } = e.target;
     setFormData((prevState) => ({
@@ -170,12 +171,14 @@ handleUpdate(id, formData);
 <label>
 Title:
 <input
-            type="text"
-            name="title"
-            value={title}
-            onChange={handleChange}
-          />
+type="text"
+name="title"
+value={title}
+onChange={handleChange}
+/>
+
+```
 
 ## Code Issues & Resolutions
 
-> It was tricky dealing with this code in particular. Everything was running fine in the back end and I couldn't figure out why the editing function for the comics wasn't functioning the way that it should. With some help, I found out that I wasn't passing the id on submit and therefore it wasn't rendering correctly.
+> It was tricky dealing with this snippet of code in particular. Testing out everything on Postman, it seemed that everything was running fine in the back end. I couldn't figure out why the editing function on the front end for the comics wasn't running the way that it should. With some help, I found out that I wasn't passing the id on submit and therefore it wasn't rendering correctly.
