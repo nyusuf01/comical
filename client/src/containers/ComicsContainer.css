@@ -1,8 +1,3 @@
-.background {
-  background-image: url("https://monsternerd.files.wordpress.com/2009/10/cartoons_calvin_and_hobbes_chocolate_frosted_sugar_bombs_03_pretty_wired1000x319x256.gif");
-  background-color: white;
-}
-
 .search {
   flex-direction: row;
   justify-content: flex-end;
@@ -43,9 +38,8 @@
 }
 
 .comic-details {
-  /* display: flex; */
   text-align: left;
-  /* max-width: 750px; */
+
   margin: 70px auto;
   font-family: "Quicksand", sans-serif;
   letter-spacing: 1px;
@@ -55,7 +49,6 @@
 }
 
 .comic-details img {
-  /* height: 400px; */
   width: 600px;
 }
 
@@ -67,8 +60,6 @@
 }
 
 .comic-details p {
-  /* text-indent: 3ch; */
-  /* text-align: justify; */
   align-items: center;
   text-align: center;
 }

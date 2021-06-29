@@ -6,11 +6,9 @@
 
 **Comical** is a a database of shared comic strips. Signed in users will be able to add their favorite comic strips and leave comments as well as add, edit and delete.
 
-
 <br>
 
 ## MVP
-
 
 - _Full CRUD for the comic strip displays_
 - _Full CRUD for reviews_
@@ -22,18 +20,16 @@
 
 ### Libraries and Dependencies
 
-
-
-|     Library      | Description                                |
-| :--------------: | :----------------------------------------- |
-|      React       | _Front end user interface_ |
-|   React Router   | _Used to define multiple routes in the application_ |
-| React Router DOM | _Rendering components in the front end_ |
-|     Axios      | _Helps make API calls in React_ |
-|  Styled Components  | _Hamburger Menu_ |
-|  Ruby on Rails  | _The server side web app framework_ |
-|  jwt  | _Implementation of JSON Web Tokens_ |
-|  bcrypt  | _A password-hashing function _ |
+|      Library      | Description                                         |
+| :---------------: | :-------------------------------------------------- |
+|       React       | _Front end user interface_                          |
+|   React Router    | _Used to define multiple routes in the application_ |
+| React Router DOM  | _Rendering components in the front end_             |
+|       Axios       | _Helps make API calls in React_                     |
+| Styled Components | _Hamburger Menu_                                    |
+|   Ruby on Rails   | _The server side web app framework_                 |
+|        jwt        | _Implementation of JSON Web Tokens_                 |
+|      bcrypt       | _A password-hashing function _                      |
 
 <br>
 
@@ -49,8 +45,6 @@ https://www.figma.com/file/GI6OeA7hm8myqyMIhJk8Ab/Untitled?node-id=0%3A1
 
 ![Screen Shot 2021-06-22 at 1 15 11 PM](https://user-images.githubusercontent.com/80069382/122970509-050b2300-d35c-11eb-9bff-0ea1d1b01228.png)
 
-
-
 ![Screen Shot 2021-06-22 at 9 35 33 AM](https://user-images.githubusercontent.com/80069382/122934251-5f48bb80-d33d-11eb-9be9-227001125142.png)
 
 ![Screen Shot 2021-06-22 at 9 35 47 AM](https://user-images.githubusercontent.com/80069382/122934306-6a035080-d33d-11eb-920a-13444f335681.png)
@@ -61,22 +55,13 @@ https://www.figma.com/file/GI6OeA7hm8myqyMIhJk8Ab/Untitled?node-id=0%3A1
 
 ![Screen Shot 2021-06-22 at 9 10 43 AM](https://user-images.githubusercontent.com/80069382/122934351-74bde580-d33d-11eb-8e5a-e55a6324f8fc.png)
 
-
-
-
-
 #### Component Tree
 
 <img width="702" alt="Screen Shot 2021-06-22 at 11 15 26 AM" src="https://user-images.githubusercontent.com/80069382/122951382-3b8c7200-d34b-11eb-8166-2f36ac14be46.png">
 
-
-
-
 #### Component Architecture
 
-
-
-``` structure
+```structure
 
 
 src
@@ -117,30 +102,26 @@ src
 
 #### Time Estimates
 
-
-
-| Task                | Priority | Estimated Time | Time Invested | Actual Time |
-| ------------------- | :------: | :------------: | :-----------: | :---------: |
-| Create backend models    |    H     |     2 hrs      |      hrs     |    TBD   |
-| Create backend controllers |    H     |     2 hrs      |      hrs     |     TBD     |
-| Test full CRUD on backend |    H    |     2 hrs      |      hrs     |     TBD     |
-| Authorization |    H    |     3 hrs      |      hrs     |     TBD     |
-| React App framework and folder structure. Installing dependencies, |    H    |     2 hrs      |      hrs     |     TBD     |
-| Build api-config and auth files |    H    |     3 hrs      |      hrs     |     TBD     |
-| Layout screen and components |    H    |     2 hrs      |      hrs     |     TBD     |
-| Login and Sign Up Screens |    H    |     2 hrs      |      hrs     |     TBD     |
-| ComicsContainer and App.js |    H    |     2 hrs      |      hrs     |     TBD     |
-| Build Comics screen and ComicCard to view all comic strips |    H    |     3 hrs      |      hrs     |     TBD     |
-| CommicDetails screen |    H    |     3 hrs      |      hrs     |     TBD     |
-| Create and Edit screens |    H    |     3 hrs      |      hrs     |     TBD     |
-| Comment components |    H    |     3 hrs      |      hrs     |     TBD     |
-| Building CreateComment |    H    |     3 hrs      |      hrs     |     TBD     |
-| Media Queries |    H    |     3 hrs      |      hrs     |     TBD     |
-| Extra CSS |    H    |     3 hrs      |      hrs     |     TBD     |
-| Deployment |    H    |     1 hrs      |      hrs     |     TBD     |
-| Total |    H    |     42 hrs      |      hrs     |     TBD     |
-
-
+| Task                                                               | Priority | Estimated Time | Time Invested | Actual Time |
+| ------------------------------------------------------------------ | :------: | :------------: | :-----------: | :---------: |
+| Create backend models                                              |    H     |     2 hrs      |     2 hrs     |    2 hrs    |
+| Create backend controllers                                         |    H     |     2 hrs      |     2 hrs     |    2 hrs    |
+| Test full CRUD on backend                                          |    H     |     2 hrs      |     2 hrs     |    2 hrs    |
+| Authorization                                                      |    H     |     3 hrs      |     3 hrs     |    3 hrs    |
+| React App framework and folder structure. Installing dependencies, |    H     |     2 hrs      |     2 hrs     |    2 hrs    |
+| Build api-config and auth files                                    |    H     |     3 hrs      |     3 hrs     |    3 hrs    |
+| Layout screen and components                                       |    H     |     2 hrs      |     2 hrs     |    3 hrs    |
+| Login and Sign Up Screens                                          |    H     |     2 hrs      |     2 hrs     |    2 hrs    |
+| ComicsContainer and App.js                                         |    H     |     2 hrs      |     2 hrs     |    2 hrs    |
+| Build Comics screen and ComicCard to view all comic strips         |    H     |     3 hrs      |     3 hrs     |    3 hrs    |
+| CommicDetails screen                                               |    H     |     3 hrs      |     3 hrs     |    3 hrs    |
+| Create and Edit screens                                            |    H     |     3 hrs      |     3 hrs     |    3 hrs    |
+| Comment components                                                 |    H     |     3 hrs      |     3 hrs     |    3 hrs    |
+| Building CreateComment                                             |    H     |     3 hrs      |     3 hrs     |    3 hrs    |
+| Media Queries                                                      |    H     |     3 hrs      |     3 hrs     |    3 hrs    |
+| Extra CSS                                                          |    H     |     3 hrs      |     3 hrs     |    3 hrs    |
+| Deployment                                                         |    H     |     1 hrs      |     1 hrs     |    1 hrs    |
+| Total                                                              |    H     |     42 hrs     |    42 hrs     |   42 hrs    |
 
 <br>
 
@@ -150,11 +131,9 @@ src
 
 ![Screen Shot 2021-06-22 at 1 15 44 PM](https://user-images.githubusercontent.com/80069382/122970544-0f2d2180-d35c-11eb-9f69-8caee0abb564.png)
 
-
-
 <br>
 
-***
+---
 
 ## Post-MVP
 
@@ -166,12 +145,12 @@ src
 
 <br>
 
-***
+---
 
 ## Code Showcase
 
-> 
+>
 
 ## Code Issues & Resolutions
 
-> 
+>
