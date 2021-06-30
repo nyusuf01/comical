@@ -34,7 +34,7 @@ puts "#{User.count} users created"
 
 @comic9 = Comic.create!(title: 'Garfield', author: 'Jim Davis', summary: 'October 05, 2000', image_url: 'https://lh3.googleusercontent.com/proxy/kkHALCYoCFfj81XRJtfWw8IGmZWkSe0RLRSojD104viyJCaseA1BkohuOLTZhzKAkY5YZPVc36cb5uwy00Tx1fM4KL-O2kB4th-I0FKNCA8_2959AWyugG33', user: @user)
 
-@comic9 = Comic.create!(title: 'Garfield', author: 'Jim Davis', summary: '06-21', image_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9P61sKRpz_VSLBE72grWQGqXJw79zCd14EIMnY9EKkwWiUqevLg1YDRcskYBuICZmog&usqp=CAU', user: @user)
+@comic10 = Comic.create!(title: 'Garfield', author: 'Jim Davis', summary: '06-21', image_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9P61sKRpz_VSLBE72grWQGqXJw79zCd14EIMnY9EKkwWiUqevLg1YDRcskYBuICZmog&usqp=CAU', user: @user)
 
 puts "#{Comic.count} comic strips created"
 
